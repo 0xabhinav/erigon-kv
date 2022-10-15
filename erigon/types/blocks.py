@@ -1,8 +1,9 @@
 import rlp
 from eth.vm.forks.berlin.blocks import BerlinBlock
 from eth.vm.forks.london.blocks import LondonBlock
+from typing import Union
 
-Block = BerlinBlock | LondonBlock
+Block = Union[BerlinBlock, LondonBlock]
 
 
 def decode_block(data: bytes) -> Block:
