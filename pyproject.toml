@@ -3,7 +3,7 @@ line-length = 100
 
 [tool.poetry]
 name = "erigon"
-version = "0.1.0-alpha3"
+version = "0.1.0-alpha4"
 description = "erigon kv api"
 authors = ["banteg"]
 license = "MIT"
