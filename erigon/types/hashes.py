@@ -1,10 +1,9 @@
 # erigon uses an accursed encoding for hash types
 # ported from https://github.com/ledgerwatch/erigon-lib/blob/main/gointerfaces/type_utils.go
-from typing import TypeAlias
-
+from typing import Any
 from erigon.proto.types.types_pb2 import H128, H160, H256, H512, H1024, H2048
 
-HashType: TypeAlias = H128 | H160 | H256 | H512 | H1024 | H2048
+HashType = Any
 HASH_TYPES = {16: H128, 20: H160, 32: H256, 64: H512, 128: H1024, 256: H2048}
 
 
